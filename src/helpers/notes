@@ -1,0 +1,38 @@
+1. Register
+	- masukkan data
+	- klik button, kirim
+	- apa yang terjadi?   mau redirect ke halaman login ? ada token di response g? kalau ada token di response, bisa dismpan for future use. nyimpennya bisa di cookies atau localStoragw
+
+
+2. Login
+	- masukkan data
+	- klik button
+	- apa yang terjadi? kalau response.status == 200, misalnya: kamu redirect ke halaman home, lalu apa lagi? misalnya dapat token di response, simpen. 
+
+
+3. Home
+	- harusnya nggak bisa diakses kalau nggak punya token, atau belon login
+	- di home itu ngapain? mau nampilin apa?
+	- sekarang, kamu kopas templatenya semua dalam satu halaman
+	- harusnya dipisah
+
+<!-- 		//methods:  post, get, put, delete 
+		// get buat ambil data, nggak ada req body,  bisa ada parameter di urlnya, bisa nggak
+		// post buat bikin baru,  ada req body yang harus dikirim
+		// put buat ngedit, ada req body
+		// delete, nggak ada req body, tapi ada param di url
+
+		// status code: 200, 201, 502, 500, 404, macam2
+		// 20~: ok`
+		// 201 berhasil add data
+		// 40~ : error
+		// 403 unauthorized access
+		// 50~ error ngga kehandle
+		// 502 server down -->
+		          // response itu kembalian dari promise
+          // statusnya tergantung beken
+          // persetujuan sama backend, 200 atau apa pas handle success
+          // handle success
+          // cek responsenya
+          // responsenya harusnya menghasilkan token, tokennya disimpen, di localStorage atau cookie
+          // coba pakai helper setCookie ... buat simpen gitu
